@@ -8,14 +8,29 @@ function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" })
 
   const submitHandler = async () => {
-    await fetch("https://portfolio-backend-self-seven.vercel.app/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form)
-    })
-    toast.success("Message sent successfully 🚀")
+  try {
+    const res = await fetch(
+      "https://portfolio-backend-self-seven.vercel.app/api/contact",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      }
+    )
 
+    if (!res.ok) {
+      throw new Error("Request failed")
+    }
+
+    toast.success("Message sent successfully 🚀")
+    setForm({ name: "", email: "", message: "" })
+
+  } catch (error) {
+    toast.error("Failed to send message ❌")
+    console.error(error)
   }
+}
+
 
   return (
     <div className="py-28 bg-slate-900 text-white">
