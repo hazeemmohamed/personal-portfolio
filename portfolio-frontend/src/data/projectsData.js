@@ -6,7 +6,7 @@ const projects = [
       "Pixel-perfect Apple website clone focusing on layout, animations, and responsive UI.",
     tech: ["React", "Tailwind CSS"],
     github: "https://github.com/hazeemmohamed/apple-website-clone.git",
-    live: "https://vercel.com/mohamed-hazeems-projects/apple-website-clone/8Heaj9KWX65X2xEqJeHx7zqnVfi2",
+    live: "https://apple-website-clone-alpha-virid.vercel.app/",
     category: "Clone"
   },
   {
@@ -46,7 +46,7 @@ const projects = [
       "Weather forecasting app using real-time API data.",
     tech: ["JavaScript", "API"],
     github: "https://github.com/hazeemmohamed/weather-app.git",
-    live: "https://vercel.com/mohamed-hazeems-projects/weather-app/FcqdGpwRBC2e9jdJsH28NLhVndjk",
+    live: "https://weather-app-omega-sandy.vercel.app/",
     category: "Utility"
   },
   {

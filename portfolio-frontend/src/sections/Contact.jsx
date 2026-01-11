@@ -8,7 +8,7 @@ function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" })
 
   const submitHandler = async () => {
-    await fetch("http://localhost:5000/api/contact", {
+    await fetch("https://portfolio-backend-self-seven.vercel.app/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form)
