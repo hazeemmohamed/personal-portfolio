@@ -16,7 +16,7 @@ function Hero() {
           </p>
 
           <div className="mt-8 flex gap-4">
-            <a href="https://drive.google.com/file/d/1_p4Js3otCJQNTakYjvM_5FNTeKpZDwkR/view?usp=sharing" download className="px-6 py-3 bg-cyan-500 text-black rounded-xl font-semibold">
+            <a href="https://drive.google.com/file/d/1_p4Js3otCJQNTakYjvM_5FNTeKpZDwkR/view?usp=sharing" download target="_blank" className="px-6 py-3 bg-cyan-500 text-black rounded-xl font-semibold">
               Download CV
             </a>
             <a href="#projects" className="px-6 py-3 border border-gray-600 rounded-xl">
